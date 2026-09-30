@@ -1,19 +1,19 @@
 let animais = [
     {
         palavra: "Gato",
-        imagem: "imagens/gato.jpg"
+        imagem: "Imagens/Gato.jpg"
     },
     {
         palavra: "Cachorro",
-        imagem: "imagens/cachorro.jpg"
+        imagem: "Imagens/Cachorro.jpg"
     },
     {
         palavra: "Leão",
-        imagem: "imagens/leão.jpg"
+        imagem: "Imagens/Leão.jpg"
     },
     {
         palavra: "Elefante",
-        imagem: "imagens/elefante.jpg"
+        imagem: "Imagens/Elefante.jpg"
     }
 ];
 
