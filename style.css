@@ -22,9 +22,10 @@ button {
     padding: 30px;
     border: 1px solid black;
     border-radius: 15px;
+    
 }
 nav {
-    background-color:blue;
+    background-color:rgb(218, 247, 2);
     padding: 30px;
     text-align: left;
 }
