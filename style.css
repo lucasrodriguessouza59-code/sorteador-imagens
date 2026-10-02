@@ -22,7 +22,7 @@ button {
     padding: 30px;
     border: 1px solid black;
     border-radius: 15px;
-    
+
 }
 nav {
     background-color:rgb(218, 247, 2);
@@ -43,4 +43,15 @@ nav a {
 
 nav a:hover {
     background-color: #555;
+}
+.juncao{
+    display: flex;
+    gap: 30px;
+}
+.anotacoes {
+    width: 500px;
+    margin: 50px 0 0 20px;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
 }
