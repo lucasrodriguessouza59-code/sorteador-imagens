@@ -22,6 +22,19 @@ let botao = document.querySelector("button");
 let resultado = document.querySelector("#resultado");
 let imagem = document.querySelector("#imagem");
 
+if(animaisDisponiveis.length === 0){
+    resultado.textContent = "Todos os animais foram sorteados";
+    imagem.src = "";
+    return;
+}
+
+let reiniciar = document.querySelector("#reiniciar");
+reiniciar.addEventListener("click", function()){
+    animaisDisponiveis = [...animais];
+
+    resultado.textContent = "";
+    imagem.src= "";
+}
 
 botao.addEventListener("click", function() {
 
