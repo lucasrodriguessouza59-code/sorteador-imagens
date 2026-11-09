@@ -1,19 +1,20 @@
 let animais = [
     {
-        palavra: "Gato",
-        imagem: "Imagens/Gato.jpg"
+        palavra: "A hipertensão muitas vezes não dá sinal, como podemos descobrir e avaliar em casa?",
+        imagem: "Imagens/Aferir pressão.jpg"
     },
     {
-        palavra: "Cachorro",
-        imagem: "Imagens/Cachorro.jpg"
+        palavra: "Para tomar o remédio no horário certo, devo?",
+        imagem: "Imagens/Alarme.jpg"
     },
     {
-        palavra: "Leão",
-        imagem: "Imagens/Leão.jpg"
+        palavra: "Para ter detalhes específicos do meu remédio devo consultar a? 
+",
+        imagem: "Imagens/Bula.jpg"
     },
     {
-        palavra: "Elefante",
-        imagem: "Imagens/Elefante.jpg"
+        palavra: "Qual nutriente do leite e derivados ajuda a prevenir a osteoporose?",
+        imagem: "Imagens/Cálcio.jpg"
     }
 ];
 let animaisDisponiveis = [...animais];
