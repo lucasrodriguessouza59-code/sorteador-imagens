@@ -22,25 +22,27 @@ let botao = document.querySelector("button");
 let resultado = document.querySelector("#resultado");
 let imagem = document.querySelector("#imagem");
 
-if(animaisDisponiveis.length === 0){
-    resultado.textContent = "Todos os animais foram sorteados";
-    imagem.src = "";
-    return;
-}
-
 let reiniciar = document.querySelector("#reiniciar");
-reiniciar.addEventListener("click", function()){
+reiniciar.addEventListener("click", function(){
     animaisDisponiveis = [...animais];
 
     resultado.textContent = "";
     imagem.src= "";
-}
+});
 
 botao.addEventListener("click", function() {
 
+    if(animaisDisponiveis.length === 0){
+        resultado.textContent = "Todos os animais foram sorteados";
+        imagem.src = "";
+        return;
+    }
     let numero = Math.floor(Math.random() * animaisDisponiveis.length);
+
     resultado.textContent = animaisDisponiveis[numero].palavra;
+
     imagem.src = animaisDisponiveis[numero].imagem;
+
     animaisDisponiveis.splice(numero,1);
 
 });
