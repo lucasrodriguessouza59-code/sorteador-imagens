@@ -39,6 +39,7 @@ botao.addEventListener("click", function() {
     if(animaisDisponiveis.length === 0){
         resultado.textContent = "Todos os animais foram sorteados";
         imagem.src = "";
+        animalSorteado = null;
         return;
     }
     let numero = Math.floor(Math.random() * animaisDisponiveis.length);
