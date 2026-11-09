@@ -47,8 +47,6 @@ botao.addEventListener("click", function() {
     animalSorteado = animaisDisponiveis[numero];
 
     resultado.textContent = animalSorteado.palavra;
-    resultado.textContent = "";
-
     animaisDisponiveis.splice(numero,1);
 
 });
