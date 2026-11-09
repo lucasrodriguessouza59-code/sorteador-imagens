@@ -17,15 +17,19 @@ let animais = [
     }
 ];
 let animaisDisponiveis = [...animais];
+let animalSorteado = null;
 
-let botao = document.querySelector("button");
+let botao = document.querySelector("#sortear");
+let revelar = document.querySelector("#revelar");
+let reiniciar = document.querySelector("#reiniciar");
+
 let resultado = document.querySelector("#resultado");
 let imagem = document.querySelector("#imagem");
 
-let reiniciar = document.querySelector("#reiniciar");
+
 reiniciar.addEventListener("click", function(){
     animaisDisponiveis = [...animais];
-
+    animalSorteado = null;
     resultado.textContent = "";
     imagem.src= "";
 });
@@ -39,10 +43,22 @@ botao.addEventListener("click", function() {
     }
     let numero = Math.floor(Math.random() * animaisDisponiveis.length);
 
-    resultado.textContent = animaisDisponiveis[numero].palavra;
+    animalSorteado = animaisDisponiveis[numero];
 
-    imagem.src = animaisDisponiveis[numero].imagem;
+    imagem.src = animalSorteado.imagem;
+    resultado.textContent = "";
 
     animaisDisponiveis.splice(numero,1);
+
+});
+
+revelar.addEventListener("click", function() {
+
+    if (animalSorteado === null) {
+        resultado.textContent = "Primeiro sorteie uma imagem!";
+        return;
+    }
+
+    resultado.textContent = animalSorteado.palavra;
 
 });
