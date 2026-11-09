@@ -48,8 +48,3 @@ nav a:hover {
     display: flex;
     gap: 30px;
 }
-.anotacoes {
-    width: 500px;
-    margin: 50px 0 0 20px;
-    padding: 30px;
-}
