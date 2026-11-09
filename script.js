@@ -8,8 +8,7 @@ let animais = [
         imagem: "Imagens/Alarme.jpg"
     },
     {
-        palavra: "Para ter detalhes específicos do meu remédio devo consultar a? 
-",
+        palavra: "Para ter detalhes específicos do meu remédio devo consultar a?",
         imagem: "Imagens/Bula.jpg"
     },
     {
