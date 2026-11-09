@@ -46,7 +46,7 @@ botao.addEventListener("click", function() {
 
     animalSorteado = animaisDisponiveis[numero];
 
-    imagem.src = animalSorteado.imagem;
+    resultado.textContent = animalSorteado.palavra;
     resultado.textContent = "";
 
     animaisDisponiveis.splice(numero,1);
@@ -60,6 +60,6 @@ revelar.addEventListener("click", function() {
         return;
     }
 
-    resultado.textContent = animalSorteado.palavra;
+    imagem.src = animalSorteado.imagem;
 
 });
