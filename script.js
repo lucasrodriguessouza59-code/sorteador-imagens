@@ -1,82 +1,102 @@
 let animais = [
     {
         palavra: "A hipertensão muitas vezes não dá sinal, como podemos descobrir e avaliar em casa?",
+        resposta: "Aferindo a pressão arterial",
         imagem: "Imagens/Aferir pressão.jpg"
     },
     {
         palavra: "Para tomar o remédio no horário certo, devo?",
+        resposta: "Usar o alarme",
         imagem: "Imagens/Alarme.jpg"
     },
     {
         palavra: "Para ter detalhes específicos do meu remédio devo consultar a?",
+        resposta: "Bula",
         imagem: "Imagens/Bula.jpg"
     },
     {
         palavra: "Qual nutriente do leite e derivados ajuda a prevenir a osteoporose?",
+        resposta: "Cálcio",
         imagem: "Imagens/Cálcio.jpg"
     },
     {
         palavra: "Para saber em quais dias já tomei o remédio, posso  marcar no…?",
+        resposta: "Calendário",
         imagem: "Imagens/Calendário.jpg"
     },
     {
         palavra: "Mesmo sem sentir nada, uma vez que ao ano é recomendado fazer um??",
+        resposta: "Check up",
         imagem: "Imagens/Check up.jpg"
     },
     {
         palavra: " Alguns remédios devem ser tomados junto com a?",
+        resposta: "Comida",
         imagem: "Imagens/Comida.jpg"
     },
     {
         palavra: "Tenho dúvidas na forma de adesão de  um medicamento. Qual profissional devo procurar?",
+        resposta: "Farmacêutico",
         imagem: "Imagens/Farmacêutico.jpg"
     },   
     { 
         palavra: "Para não perder a receita, posso guardar uma?",
+        resposta: "Foto",
         imagem: "Imagens/Foto.jpg"
     },
     {
         palavra: "Outros remédios são tomados de estômago vazio. Isso se chama tomar em?",
+        resposta: "Jejum",
         imagem: "Imagens/Jejum.jpg"
     },
     {
         palavra: "Estou me sentindo melhor, quero parar de tomar o remédio. Devo procurar um",
+        resposta: "Médico",
         imagem: "Imagens/Médico.jpg"
     },
     {
         palavra: "Posso tomar ou emprestar o remédio de outra pessoa?",
+        resposta: "Não",
         imagem: "Imagens/Não.jpg"
     },
     {
         palavra: " Esqueci uma dose. Posso tomar em dobro?",
+        resposta: "Não pode",
         imagem: "Imagens/Não pode.jpg"
     },
     {
         palavra: "Para separar os remédios de cada dia da semana, posso usar um?",
+        resposta: "Porta comprimidos",
         imagem: "Imagens/Porta comprimidos.jpg"
     },
     {
-        palavra: "O remédio que tomo todo dia protege meu coração e minha pressão. Ele funciona como um?",
+        palavra: "O remédio que tomo todo dia protege meu coração e minha pressão. Ele funciona como uma?",
+        resposta: "Proteção",
         imagem: "Imagens/Proteção.jpg"
     },
     {
         palavra: "Para saber como tomar o remédio, devo seguir o que está na?",
+        resposta: "Receita",
         imagem: "Imagens/Receita.jpg"
     },
     {
         palavra: " Qual tempero em excesso está ligado ao aumento da pressão?",
+        resposta: "Sal",
         imagem: "Imagens/Sal.jpg"
     },
     {
         palavra: "Qual serviço do SUS, perto de casa, que oferece consultas, vacinas e que afere a pressão?",
+        resposta: "UBS",
         imagem: "Imagens/UBS.jpg"
     },
     {
         palavra: "Como podemos prevenir a gripe e outras doenças infecciosas?",
+        resposta: "Tomando vacina",
         imagem: "Imagens/Vacina.jpg"
     },
     {
         palavra: "Antes de tomar, devo conferir na caixa a data de?",
+        resposta: "Validade",
         imagem: "Imagens/Validade.jpg"
     }
 ];
@@ -89,6 +109,7 @@ let reiniciar = document.querySelector("#reiniciar");
 
 let resultado = document.querySelector("#resultado");
 let imagem = document.querySelector("#imagem");
+let resposta = document.querySelector("#resposta");
 
 
 reiniciar.addEventListener("click", function(){
@@ -96,13 +117,15 @@ reiniciar.addEventListener("click", function(){
     animalSorteado = null;
     resultado.textContent = "";
     imagem.src= "";
+    resposta.textContent = "";
 });
 
 botao.addEventListener("click", function() {
 
     if(animaisDisponiveis.length === 0){
-        resultado.textContent = "Todos as dicas foram sorteados";
+        resultado.textContent = "Todos as dicas foram sorteadas";
         imagem.src = "";
+        resposta.textContent = "";
         animalSorteado = null;
         return;
     }
@@ -112,6 +135,7 @@ botao.addEventListener("click", function() {
 
     resultado.textContent = animalSorteado.palavra;
     imagem.src = "";
+    resposta.textContent = "";
     animaisDisponiveis.splice(numero,1);
 
 });
@@ -124,5 +148,7 @@ revelar.addEventListener("click", function() {
     }
 
     imagem.src = animalSorteado.imagem;
+    resposta.textContent = animalSorteado.resposta;
+
 
 });
