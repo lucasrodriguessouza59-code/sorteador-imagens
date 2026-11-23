@@ -49,3 +49,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
 }
+#resposta {
+    font-size: 60px;
+    font-weight: bold;
+}
