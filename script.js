@@ -57,7 +57,7 @@ let animais = [
     {
         palavra: "Posso tomar ou emprestar o remédio de outra pessoa?",
         resposta: "Não",
-        imagem: "Imagens/N.jpg"
+        imagem: "Imagens/ImagemN.jpg"
     },
     {
         palavra: " Esqueci uma dose. Posso tomar em dobro?",
