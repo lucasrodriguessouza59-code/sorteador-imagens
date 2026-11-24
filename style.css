@@ -24,11 +24,6 @@ button {
     border-radius: 15px;
 
 }
-nav {
-    background-color:rgb(32, 31, 32);
-    padding: 20px;
-    text-align: left;
-}
 
 nav a {
     display: inline-block;
